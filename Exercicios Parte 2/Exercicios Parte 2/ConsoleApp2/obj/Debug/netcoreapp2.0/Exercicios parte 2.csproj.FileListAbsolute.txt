@@ -1,0 +1,22 @@
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.deps.json
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.runtimeconfig.json
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.runtimeconfig.dev.json
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.dll
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.pdb
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.csprojResolveAssemblyReference.cache
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.csproj.CoreCompileInputs.cache
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.AssemblyInfoInputs.cache
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.AssemblyInfo.cs
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.dll
+C:\Users\diogo.camilo\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.pdb
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.deps.json
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.runtimeconfig.json
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.runtimeconfig.dev.json
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.dll
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\bin\Debug\netcoreapp2.0\Exercicios parte 2.pdb
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.csprojResolveAssemblyReference.cache
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.csproj.CoreCompileInputs.cache
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.AssemblyInfoInputs.cache
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.AssemblyInfo.cs
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.dll
+C:\Users\diogo.camilo\source\repos\Exercicios Parte 2\ConsoleApp2\obj\Debug\netcoreapp2.0\Exercicios parte 2.pdb
