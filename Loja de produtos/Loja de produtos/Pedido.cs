@@ -6,7 +6,7 @@ namespace Loja_de_produtos
 {
     class Pedido 
     {
-        public DateTime dataPedido;
+        public string dataPedido;
         public int qtdPedido, codPedido = 0;
         public double valorPedido;
         public int codigoProduto;
