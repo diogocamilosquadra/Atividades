@@ -6,7 +6,7 @@ namespace Loja_de_produtos
 {
     class Pedido 
     {
-        public string dataPedido;
+        public DateTime dataPedido;
         public int qtdPedido, codPedido = 0;
         public double valorPedido;
         public int codigoProduto;
@@ -25,8 +25,9 @@ namespace Loja_de_produtos
                 qtdPedido = int.Parse(Console.ReadLine());
 
                 valorPedido = qtdPedido * p.preco;
-
+                dataPedido = DateTime.Now;
                 Console.WriteLine("Seu pedido total vai ficar em {0}", valorPedido);
+                Console.WriteLine("Data do pedido {0}", dataPedido);
             }
             else
             {
