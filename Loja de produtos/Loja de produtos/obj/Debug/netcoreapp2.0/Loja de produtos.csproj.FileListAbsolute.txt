@@ -1,0 +1,11 @@
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\bin\Debug\netcoreapp2.0\Loja de produtos.deps.json
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\bin\Debug\netcoreapp2.0\Loja de produtos.runtimeconfig.json
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\bin\Debug\netcoreapp2.0\Loja de produtos.runtimeconfig.dev.json
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\bin\Debug\netcoreapp2.0\Loja de produtos.dll
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\bin\Debug\netcoreapp2.0\Loja de produtos.pdb
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\obj\Debug\netcoreapp2.0\Loja de produtos.csprojResolveAssemblyReference.cache
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\obj\Debug\netcoreapp2.0\Loja de produtos.csproj.CoreCompileInputs.cache
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\obj\Debug\netcoreapp2.0\Loja de produtos.AssemblyInfoInputs.cache
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\obj\Debug\netcoreapp2.0\Loja de produtos.AssemblyInfo.cs
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\obj\Debug\netcoreapp2.0\Loja de produtos.dll
+C:\Users\diogo.camilo\source\repos\Loja de produtos\Loja de produtos\obj\Debug\netcoreapp2.0\Loja de produtos.pdb
