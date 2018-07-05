@@ -48,6 +48,8 @@ namespace Loja_de_produtos
                 else if (opcao == 2)
                 {
                     Console.Clear();
+                    Console.WriteLine("Digite o codigo do cliente");
+                    c.codigoCliente = int.Parse(Console.ReadLine());
                     Console.WriteLine("Digite o nome do cliente");
                     c.nomeCliente = Console.ReadLine();
                     Console.WriteLine("Digite o endereco do cliente");
