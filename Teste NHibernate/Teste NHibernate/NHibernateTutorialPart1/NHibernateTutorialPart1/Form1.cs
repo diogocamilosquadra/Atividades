@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,7 +33,7 @@ namespace NHibernateTutorialPart1
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            //Declara as variaveis do Nhibernate
+             //Declara as variaveis do Nhibernate
             myConfiguration = new Configuration();
             myConfiguration.Configure();
             mySessionFactory = myConfiguration.BuildSessionFactory();
@@ -42,13 +42,23 @@ namespace NHibernateTutorialPart1
             //  Salva os itens
             using (mySession.BeginTransaction())
             {
-                Contact loContact = new Contact();
-                loContact.ID = int.Parse(txtID.Text);
-                loContact.FirstName = txtFirstName.Text;
-                loContact.LastName = txtLastName.Text;
-                mySession.Save(loContact);
+                try
+                {
+                    Contact loContact = new Contact();
+                    loContact.ID = int.Parse(txtID.Text);
+                    loContact.FirstName = txtFirstName.Text;
+                    loContact.LastName = txtLastName.Text;
+                    mySession.Save(loContact);
 
-                mySession.Transaction.Commit();
+                    mySession.Transaction.Commit();
+                    MessageBox.Show("Pessoa Cadastrada com Sucesso!",
+                        "",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                }
+                catch (Exception) {
+
+                    MessageBox.Show("Verifique os campos digitados",
+                        "Erro!",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -63,13 +73,23 @@ namespace NHibernateTutorialPart1
             //Deleta de acordo com a sintaxe
             using (mySession.BeginTransaction())
             {
-                Contact loContact = new Contact();
-                loContact.FirstName = txtFirstName.Text;
-                loContact.LastName = txtLastName.Text;
-                mySession.Delete("from Contact where FirstName='"+loContact.FirstName+"'" +
-                "and LastName='"+loContact.LastName+"';");
+                try
+                {
+                    Contact loContact = new Contact();
+                    loContact.FirstName = txtFirstName.Text;
+                    loContact.LastName = txtLastName.Text;
+                    mySession.Delete("from Contact where FirstName='" + loContact.FirstName + "'" +
+                    "and LastName='" + loContact.LastName + "';");
 
-                mySession.Transaction.Commit();
+                    mySession.Transaction.Commit();
+                    MessageBox.Show("Pessoa Deletada com Sucesso!",
+                        "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                catch (Exception) {
+
+                    MessageBox.Show("Verifique os campos digitados",
+                        "Pessoa não encontrada!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -85,17 +105,24 @@ namespace NHibernateTutorialPart1
             //Lista todos os itens da classe Contact
             using (mySession.BeginTransaction())
             {
-
-                ICriteria criteria = mySession.CreateCriteria<Contact>();
-                IList<Contact> list = criteria.List<Contact>();
                 
-                foreach (Contact pessoa in list)
-                { 
-                    MessageBox.Show(" ID da pessoa: " + pessoa.ID +
-                                    " \nPrimeiro nome da pessoa: " + pessoa.FirstName +
-                                    " \nSegundo  nome da pessoa: " + pessoa.LastName
-                                    );
+                    ICriteria criteria = mySession.CreateCriteria<Contact>();
+                    IList<Contact> list = criteria.List<Contact>();
+
+                    foreach (Contact pessoa in list)
+                    {
+                        MessageBox.Show(" ID da pessoa: " + pessoa.ID +
+                                        " \nPrimeiro nome da pessoa: " + pessoa.FirstName +
+                                        " \nSegundo  nome da pessoa: " + pessoa.LastName
+                                        );
+                    }
+
+                if (list.Count == 0)
+                {
+                    MessageBox.Show("Nenhuma Pessoa foi encontrada",
+                       "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                
             }
         }
 
@@ -110,15 +137,26 @@ namespace NHibernateTutorialPart1
             //Atualiza um cadastro
             using (mySession.BeginTransaction())
             {
+                try
+                {
+                    Contact loContact = new Contact();
 
-                Contact loContact = new Contact();
+                    loContact.ID = int.Parse(txtID.Text);
+                    loContact.FirstName = txtFirstName.Text;
+                    loContact.LastName = txtLastName.Text;
 
-                loContact.ID = int.Parse(txtID.Text);
-                loContact.FirstName = txtFirstName.Text;
-                loContact.LastName = txtLastName.Text;
+                    mySession.SaveOrUpdate(loContact);
+                    mySession.Transaction.Commit();
 
-                mySession.SaveOrUpdate(loContact);
-                mySession.Transaction.Commit();
+                    MessageBox.Show("Cadastro Atualizado com Sucesso!",
+                       "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                catch (Exception) {
+
+                    MessageBox.Show("Verifique os campos digitados",
+                       "Pessoa não encontrada!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
 
         }
